@@ -2,6 +2,7 @@ import pytest
 import sqlite3
 import os
 import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from io import StringIO
 from registration.registration import create_db, add_user, authenticate_user, display_users, user_choice, main
 
